@@ -1,0 +1,113 @@
+
+/*
+  html5reset.css
+  Purpose: Establish consistent, predictable defaults across browsers.
+  Created for the SI 539 mobile website project.
+*/
+
+/* Use predictable sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove inconsistent default spacing */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set consistent document defaults */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Make media elements responsive by default */
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+/* Make form controls inherit the site's typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove default button styling without removing keyboard focus */
+button {
+  cursor: pointer;
+}
+
+/* Prevent long words and URLs from breaking layouts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  overflow-wrap: break-word;
+}
+
+/* Make tables easier to size consistently */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Keep lists available to assistive technology */
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
